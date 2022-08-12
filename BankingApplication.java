@@ -26,14 +26,14 @@ class BankAccount{
    
    void withdraw (double amount){
       if (amount < this.balance) {
-			this.balance -= amount;
-			this.previousTransaction = -amount;
-		}
-		else {
-			System.out.println("Funds insufficient, please try another amount.");
-			this.balance += 0;
-		}
-	}
+	this.balance -= amount;
+	this.previousTransaction = -amount;
+      }
+      else {
+         System.out.println("Funds insufficient, please try another amount.");
+	 this.balance += 0;
+      }
+   }
    
    void getPreviousTransaction (){
       if (previousTransaction > 0){
